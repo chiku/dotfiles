@@ -1,7 +1,4 @@
 export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/1.5/Home
-# export CATALINA_HOME=/Applications/apache-tomcat-6.0.10
-# alias starttomcat="$CATALINA_HOME/bin/startup.sh"
-# alias stoptomcat="$CATALINA_HOME/bin/shutdown.sh"
 
 if [ -f `brew --prefix`/etc/bash_completion ]; then
   . `brew --prefix`/etc/bash_completion
@@ -12,7 +9,8 @@ if [ -d ~/bin ]; then
     export PATH
 fi
 
-PATH=$PATH:/usr/local/mysql/bin:/opt/local/bin
+PATH=$PATH:/usr/local/mysql/bin
+# PATH=$PATH:/usr/local/mysql/bin:/opt/local/bin
 export PATH
 
 export PS1="\w\$ "

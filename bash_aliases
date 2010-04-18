@@ -9,9 +9,8 @@ alias mc="script/dbconsole"
 
 
 alias mig="rake db:migrate && rake db:migrate RAILS_ENV=test_integration && rake db:migrate RAILS_ENV=test"
-alias pcd="rake pcd"
+alias pc="rake pc"
 alias rcov="rake rcov"
-alias pci="rake pci"
 alias mvim="/Applications/MacPorts/MacVim.app/Contents/MacOS/MacVim"
 
 alias nt=newtab

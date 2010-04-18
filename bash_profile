@@ -3,8 +3,8 @@ export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/1.5/Home
 # alias starttomcat="$CATALINA_HOME/bin/startup.sh"
 # alias stoptomcat="$CATALINA_HOME/bin/shutdown.sh"
 
-if [ -f /opt/local/etc/bash_completion ]; then
-    . /opt/local/etc/bash_completion
+if [ -f `brew --prefix`/etc/bash_completion ]; then
+  . `brew --prefix`/etc/bash_completion
 fi
 
 if [ -d ~/bin ]; then

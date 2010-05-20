@@ -10,7 +10,6 @@ if [ -d ~/bin ]; then
 fi
 
 PATH=$PATH:/usr/local/mysql/bin
-# PATH=$PATH:/usr/local/mysql/bin:/opt/local/bin
 export PATH
 
 export PS1="\w\$ "

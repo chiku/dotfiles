@@ -7,8 +7,8 @@ alias sc="NODEPS=true script/console"
 alias sd="script/dev"
 alias mc="script/dbconsole"
 
-
-alias mig="rake db:migrate && rake db:migrate RAILS_ENV=test_integration && rake db:migrate RAILS_ENV=test"
+alias migrate_all="rake db:migrate && RAILS_ENV=test rake db:migrate && RAILS_ENV=test_integration rake db:migrate"
+alias rollback_all="rake db:rollback && RAILS_ENV=test rake db:rollback && RAILS_ENV=test_integration rake db:rollback"
 alias pc="rake pc"
 alias rcov="rake rcov"
 alias mvim="/Applications/MacPorts/MacVim.app/Contents/MacOS/MacVim"

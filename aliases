@@ -15,6 +15,6 @@ alias mvim="/Applications/MacPorts/MacVim.app/Contents/MacOS/MacVim"
 
 alias nt=newtab
 
-if [ -f `brew --prefix`/etc/bash_completion ]; then
-  source ~/.bash_aliases_unpublished
+if [ -f ~/.aliases_unpublished ]; then
+  source ~/.aliases_unpublished
 fi

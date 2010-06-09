@@ -1,15 +1,15 @@
 export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/1.5/Home
 
-if [ -f `brew --prefix`/etc/bash_completion ]; then
-  . `brew --prefix`/etc/bash_completion
+if [ -f /usr/local/etc/bash_completion ]; then
+  . /usr/local/etc/bash_completion
 fi
 
 if [ -d ~/bin ]; then
-    PATH=$PATH:~/bin
-    export PATH
+  PATH=$PATH:~/bin
+  export PATH
 fi
 
-PATH=$PATH:/usr/local/mysql/bin
+PATH=$PATH:/usr/local/mysql/bin:/usr/local/sbin
 export PATH
 
 # open a new tab on Terminal with the current working dir

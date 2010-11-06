@@ -1,6 +1,6 @@
 alias ls='ls -G'
 
-alias ff_cache="cd /Users/chiranm/Library/Caches/Firefox/Profiles/pnjbb7m3.default/Cache/; open ."
+alias ff_cache="cd /Users/chiranm/Library/Caches/Firefox/Profiles/*.default/Cache/; open ."
 
 alias ss="NODEPS=true script/server"
 alias sc="NODEPS=true script/console"

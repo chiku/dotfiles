@@ -1,3 +1,6 @@
+PATH=/usr/local/bin/:/usr/local/sbin:/usr/local/mysql/bin:/usr/bin:/usr/sbin:/bin:/sbin:/usr/X11/bin
+export PATH
+
 export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/1.5/Home
 
 if [ -f /usr/local/etc/bash_completion ]; then
@@ -8,9 +11,6 @@ if [ -d ~/bin ]; then
   PATH=$PATH:~/bin
   export PATH
 fi
-
-PATH=$PATH:/usr/local/mysql/bin:/usr/local/sbin
-export PATH
 
 # open a new tab on Terminal with the current working dir
 newtab() {

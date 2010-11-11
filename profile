@@ -1,11 +1,10 @@
-PATH=/usr/local/bin/:/usr/local/sbin:/usr/local/mysql/bin:/usr/bin:/usr/sbin:/bin:/sbin:/usr/X11/bin
+# PATH=/usr/local/bin/:/usr/local/sbin:/usr/local/mysql/bin:/usr/bin:/usr/sbin:/bin:/sbin:/usr/X11/bin
+# export PATH
+
+PATH=/usr/local/bin/:/usr/local/sbin:/usr/local/mysql/bin:$PATH
 export PATH
 
 export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/1.5/Home
-
-if [ -f /usr/local/etc/bash_completion ]; then
-  . /usr/local/etc/bash_completion
-fi
 
 if [ -d ~/bin ]; then
   PATH=$PATH:~/bin

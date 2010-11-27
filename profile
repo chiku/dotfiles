@@ -45,9 +45,20 @@ p() {
   export PROMPT_COMMAND='echo -ne "\033]0;${prmpt}\007"'
 }
 
-dp
+parse_git_branch() {
+  local branch=`git describe --all 2>| /dev/null | sed -e 's/heads\/\(.*\)/\1/'`
+  if [[ -n $branch ]]
+  then
+    echo "($branch)"
+  fi
+}
+
+rvm_version() {
+  echo $GEM_HOME | xargs basename
+}
 
 source ~/.aliases
+source ~/.colours
 
 if [[ -s /Users/chiranm/.rvm/scripts/rvm ]] ; then source /Users/chiranm/.rvm/scripts/rvm ; fi
 
@@ -56,3 +67,5 @@ export EDITOR="nano"
 export HISTSIZE=1000000
 
 export USE_INDIA_REPO=true
+
+dp

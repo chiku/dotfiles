@@ -58,7 +58,6 @@ rvm_version() {
 }
 
 source ~/.aliases
-source ~/.colours
 
 if [[ -s /Users/chiranm/.rvm/scripts/rvm ]] ; then source /Users/chiranm/.rvm/scripts/rvm ; fi
 

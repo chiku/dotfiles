@@ -19,3 +19,6 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 source ~/.profile
 source ~/.aliases
+
+export PS1='$fg[green]%~ $fg[blue](%n/%m) $fg[yellow]$(parse_git_branch)$fg[red] <$(rvm_version)>$reset_color%  $ '
+export PS2="(You may have missed a quotation or a parenthesis)!! "

@@ -1,6 +1,8 @@
 # .profile doesn't kick in if .bash_profile is present. Force load it
 source ~/.profile
 
+source ~/.colours
+
 export PS1="\[$text_green\]\w \[$text_purple\]\$(parse_git_branch)\[$text_red\] <\$(rvm_version)>\[$text_reset\] \$ "
 export PS2="(You may have missed a quotation or a parenthesis)!! "
 

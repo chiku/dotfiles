@@ -2,10 +2,10 @@ alias ls='ls -G'
 
 alias ff_cache="cd /Users/chiranm/Library/Caches/Firefox/Profiles/*.default/Cache/; open ."
 
-alias ss="NODEPS=true script/server"
-alias sc="NODEPS=true script/console"
-alias sd="script/dev"
+alias ss="script/server"
+alias sc="script/console"
 alias mc="script/dbconsole"
+alias sdb=mc
 
 alias migrate_all="rake db:migrate && RAILS_ENV=test rake db:migrate && RAILS_ENV=test_integration rake db:migrate"
 alias rollback_all="rake db:rollback && RAILS_ENV=test rake db:rollback && RAILS_ENV=test_integration rake db:rollback"

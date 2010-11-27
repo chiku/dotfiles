@@ -9,12 +9,12 @@ alias mc="script/dbconsole"
 
 alias migrate_all="rake db:migrate && RAILS_ENV=test rake db:migrate && RAILS_ENV=test_integration rake db:migrate"
 alias rollback_all="rake db:rollback && RAILS_ENV=test rake db:rollback && RAILS_ENV=test_integration rake db:rollback"
-alias pc="rake pc"
 alias rcov="rake rcov"
 alias mvim="/Applications/MacPorts/MacVim.app/Contents/MacOS/MacVim"
 
 alias nt=newtab
 
-if [ -f ~/.aliases_unpublished ]; then
+if [ -f ~/.aliases_unpublished ]
+then
   source ~/.aliases_unpublished
 fi

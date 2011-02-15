@@ -3,7 +3,7 @@ export ZSH=$HOME/programs/oh-my-zsh
 
 # Set to the name theme to load.
 # Look in ~/.oh-my-zsh/themes/
-export ZSH_THEME="robbyrussell"
+export ZSH_THEME="dallas"
 
 # Set to this to use case-sensitive completion
 # export CASE_SENSITIVE="true"
@@ -14,11 +14,9 @@ export ZSH_THEME="robbyrussell"
 # Uncomment following line if you want to disable colors in ls
 # export DISABLE_LS_COLORS="true"
 
+plugins=(git osx ruby rails brew)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 source ~/.profile
 source ~/.aliases
-
-export PS1='$fg[green]%~ $fg[blue](%n/%m) $fg[yellow]$(parse_git_branch)$fg[red] <$(rvm_version)>$reset_color%  $ '
-export PS2="(You may have missed a quotation or a parenthesis)!! "

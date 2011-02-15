@@ -65,6 +65,7 @@ export LC_ALL="en_US"
 export EDITOR="nano"
 export HISTSIZE=1000000
 
+export NODE_PATH=/usr/local/lib/node
 export USE_INDIA_REPO=true
 
 dp

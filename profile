@@ -1,4 +1,4 @@
-PATH=/usr/local/bin/:/usr/local/sbin:/usr/local/mysql/bin:$PATH
+PATH=/usr/local/bin:/usr/local/sbin:$PATH
 export PATH
 
 export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/1.5/Home
@@ -57,15 +57,37 @@ rvm_version() {
   echo $GEM_HOME | xargs basename
 }
 
+# hitch configuration
+
+hitch() {
+  command hitch "$@"
+  if [[ -s "$HOME/.hitch_export_authors" ]] ; then source "$HOME/.hitch_export_authors" ; fi
+}
+alias unhitch='hitch -u'
+
+# Uncomment to persist pair info between terminal instances
+# hitch
+
 source ~/.aliases
 
-if [[ -s /Users/chiranm/.rvm/scripts/rvm ]] ; then source /Users/chiranm/.rvm/scripts/rvm ; fi
+export CC=gcc-4.2
+export CXX=g++-4.2
+export GCC=gcc-4.2
 
-export LC_ALL="en_US"
-export EDITOR="nano"
+export PATH=/usr/local/bin:$PATH
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+[[ -s "$HOME/nvm/nvm.sh"       ]] && source "$HOME/nvm/nvm.sh"       # Load NVM into a shell session *as a function*
+
+export LC_CTYPE=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+
+export EDITOR="vim"
 export HISTSIZE=1000000
 
 export NODE_PATH=/usr/local/lib/node
-export USE_INDIA_REPO=true
+export GROOVEY_HOME=/usr/local/opt/groovy/libexec
+
+export MAVEN_OPTS="-Xms2048m -Xmx4096m -XX:MaxPermSize=4096m -Xdebug -Xnoagent -Djava.compiler=NONE -Xrunjdwp:transport=dt_socket,address=5005,server=y,suspend=n"
 
 dp

@@ -14,6 +14,8 @@ alias mvim="/Applications/MacPorts/MacVim.app/Contents/MacOS/MacVim"
 
 alias nt=newtab
 
+alias vnc="open '/System/Library/CoreServices/Screen Sharing.app'"
+
 if [ -f ~/.aliases_unpublished ]
 then
   source ~/.aliases_unpublished

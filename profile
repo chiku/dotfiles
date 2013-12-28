@@ -74,8 +74,6 @@ export CC=gcc-4.2
 export CXX=g++-4.2
 export GCC=gcc-4.2
 
-export PATH=/usr/local/bin:$PATH
-
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 [[ -s "$HOME/nvm/nvm.sh"       ]] && source "$HOME/nvm/nvm.sh"       # Load NVM into a shell session *as a function*
 
@@ -91,3 +89,5 @@ export GROOVEY_HOME=/usr/local/opt/groovy/libexec
 export MAVEN_OPTS="-Xms2048m -Xmx4096m -XX:MaxPermSize=4096m -Xdebug -Xnoagent -Djava.compiler=NONE -Xrunjdwp:transport=dt_socket,address=5005,server=y,suspend=n"
 
 dp
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
